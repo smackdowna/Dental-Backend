@@ -1,9 +1,9 @@
 const express = require("express");
 const router = express.Router();
 const { isAuthenticatedUser, authorizeRoles } = require("../middleware/auth");
-const { bookappointment, myAppointment, getAllAppointment, getSingleAppointment } = require("../controllers/bookController");
+const { myAppointment, getAllAppointment, getSingleAppointment, bookAppointment } = require("../controllers/bookController");
 
-router.route("/book/new").post(isAuthenticatedUser, bookappointment);
+router.route("/book/new").post(isAuthenticatedUser,bookAppointment);
 
 router
   .route("/appointment/:id")

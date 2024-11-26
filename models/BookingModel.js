@@ -25,6 +25,10 @@ const bookSchema = new mongoose.Schema({
     type: Date,
     required: [true, "Please Enter yyour appointment date"],
   },
+  time:{
+    type: String,
+    required: [true, "Please Enter your appointment time"],
+  },
   user: {
     type: mongoose.Schema.Types.ObjectId,
     ref: "Users",

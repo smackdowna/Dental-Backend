@@ -28,10 +28,12 @@ app.use(
 //Route imports
 const user = require("./routes/UserRoute");
 const book = require("./routes/bookingRoutes");
+const clinic = require("./routes/ClinicRoute");
 
 
 app.use("/api/v1", user);
 app.use("/api/v1", book);
+app.use("/api/v1", clinic);
 
 module.exports = app;
 
