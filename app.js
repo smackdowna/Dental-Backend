@@ -19,7 +19,7 @@ app.use(
 
 app.use(
   cors({
-    origin: ["http://localhost:3000","http://localhost:5173","https://dental-ui-2.vercel.app","https://friendly-cendol-165dab.netlify.app"],
+    origin: ["http://localhost:3000","http://localhost:3001","http://localhost:5173","https://dental-ui-2.vercel.app","https://friendly-cendol-165dab.netlify.app"],
     credentials: true,
     methods: ["GET", "POST", "DELETE", "PUT"],
   })
